@@ -20,3 +20,4 @@ Through this analysis, I identified several critical insights that can directly 
 
 - **Cuisines to Prioritize:** Italian cuisine emerged as both the most ordered and the most expensive, indicating an opportunity to expand this category to meet high demand and optimize pricing strategies.
 - **Items Needing Attention:** Several menu items were identified as the least ordered, suggesting they may either require targeted promotions or should be considered for removal to streamline the menu.
+- **Optimal Times for Promotions:** Order volume analysis revealed peak days (Sunday, Friday and Monday), providing an opportunity to focus promotions or menu updates around these times to boost customer engagement.
