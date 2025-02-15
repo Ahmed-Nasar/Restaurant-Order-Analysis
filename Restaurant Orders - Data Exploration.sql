@@ -222,3 +222,29 @@ FROM all_data a, CTE_2 c
 WHERE a.order_id = c.order_id
 GROUP BY a.order_id, a.category
 ORDER BY order_id, Num_items DESC;
+
+-------------------------------------------------------------------------------------------------------------------
+--Order Trends: Peak and Off-Peak Days of the Week
+
+WITH CTE AS(
+	SELECT 
+		[order_details_id]
+		,[order_id]
+		,[order_date]
+		,FORMAT(order_date,'dddd') as [Name of Day]
+		,[order_time]
+		,[item_id]
+	FROM [restaurant_db].[dbo].[order_details]	
+)
+SELECT DISTINCT
+	[Name of Day],
+	COUNT( DISTINCT order_id) as Num_Orders 
+FROM CTE
+GROUP BY [Name of Day]
+ORDER BY Num_Orders desc;
+
+
+
+
+
+
